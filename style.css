@@ -1,0 +1,348 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;700&display=swap');
+
+@font-face {
+    font-family: Noto Serif;
+    src: url(notoserif-italic.ttf);
+  }
+
+  header {
+    font-family: Noto Serif;
+    overflow: visible;
+    text-align: center;
+  }
+  
+  header nav {
+    display:inline-block;
+    text-align: center;
+  
+  }
+  
+  
+  header nav a:first-child {
+      margin-right: 18px;
+    }
+  
+  header nav a:not(:first-child) {
+      margin-right: 4px;
+    }
+    
+  
+  header nav a {
+    font-size: 16px;
+    text-decoration: none;
+    color: #666666;
+    position: relative;
+    transition: color 0.5s;
+    text-align: center;
+    font-family: 'Inconsolata', monospace;
+    padding-left: 20px;
+  }
+  
+  
+  header nav a:hover {
+    color: #FE42FF;
+  }
+  
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdown-toggle {
+    font-size: 16px;
+    text-decoration: none;
+    color: #666666;
+    position: relative;
+    padding-left: 30px;
+  }
+  
+  .dropdown-toggle:hover {
+    color: #FE42FF;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 100px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    
+  }
+  
+  .dropdown-content a {
+    color: #666666;
+    padding: 8px 8px;
+    text-decoration: none;
+    display: block;
+    font-size: 14px; /* Match the font size of the other menu items */
+    font-family: Inconsolata; /* Match the font family of the other menu items */
+    transition: color 0.5s; /* Add a transition for the hover effect */
+    text-align: left;
+  }
+  
+  .dropdown-content a:hover {
+    color: #FE42FF; /* Add the same hover color as the other menu items */
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
+  
+  /* Hero section styles */
+  .hero {
+    clear: both;
+    padding: 20px 0;
+    height: auto;
+    width: 100vw;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .content {
+    margin: 40px 0 0 0;
+  }
+  
+  .list a {
+    font-family: 'Inconsolata', monospace;
+    font-size: 10vw;
+    color: #D7D6D6;
+    text-decoration: none;
+    transition: color 0.5s;
+    line-height: 1.2;
+    display: inline-block;
+    margin-left: 16px;
+    position: relative;
+  }
+  
+  .list a img {
+    opacity: 0;
+    position: absolute;
+    top: 100%; /* Center the img element vertically relative to its parent */
+    right: -50px; /* Move the img element 50 pixels to the right of the text */
+    transform: translateY(-50%); /* Center the img element vertically */
+    max-width: 600px;
+    /* this will tell the browser to ignore any default mouse interactions on this img element */
+    pointer-events: none;
+    transition: opacity 0.3s;
+    display: block; /* Set the display property to block to center the img element horizontally */
+    z-index: 1; /* Ensure that the img element is positioned above the text */
+  }
+  
+  .list a:after{
+    content: ' /';
+  }
+  
+  .list a:last-child:after {
+    content: '';
+  }
+  
+  .list a:hover {
+    color: #FE42FF;
+  }
+  
+  .list a:last-child:after {
+    content: '';
+  }
+  
+  .list a:hover img {
+    opacity: 1;
+  }
+  
+  .hero h1 {
+    font-size: 48px;
+    margin: 0 0 24px 0;
+    font-family: Noto Serif;
+    font-style: italic;
+    text-align: center;
+    color: #666666;
+  }
+  
+  .hero h2 {
+    font-size: 32px;
+    margin: 0 0 24px 0;
+    font-family: Noto Serif;
+    text-align: center;
+    color: #292828bd;
+  }
+  
+  .hero p {
+    font-size: 16px;
+    margin-top: 16px; /* Add a top margin to create space between h1 and p */
+    font-family: Noto Serif;
+    font-style: italic;
+    font-weight: 500;
+    text-align: center; /* Change to center */
+    color: #666666;
+    padding: 0 0 30px 0;
+  }
+  
+  .about-me-text {
+    font-size: 16px;
+    margin-top: 16px; /* Add a top margin to create space between h1 and p */
+    font-family: Inconsolata;
+    font-style: regular;
+    font-weight: 500;
+    text-align: left; /* Change to center */
+    color: #666666;
+    padding: 0 0 30px 0;
+    line-height: 1.5;
+  }
+  
+  .hero a {
+    color: #666666;
+    text-decoration: none;
+    position: relative;
+    transition: color 0.5s;
+  }
+  
+  .hero a:hover {
+    color: #FE42FF; /* Add the same hover color as the other menu items */
+  }
+  
+  
+  .hero .text-container {
+    width: 500px;
+    height: 500px;
+  }
+  
+  .image-grid {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  
+  .image-caption-container {
+    display: flex;
+    margin-bottom: 48px;
+    align-items: center;
+  }
+  
+  
+  
+  
+  .image-item {
+    width: 70vw; 
+    height: 480px; /* Increase from 400px to 480px */
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-right: 16px;
+  }
+  
+  
+  
+  
+  
+  
+  
+  .caption {
+    font-size: 16px;
+    font-family: Noto Serif;
+    color: #666666;
+  }
+  
+  .image-caption-container {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  
+  /* .list2 {
+    max-width: 640px; 
+    margin-left: auto; 
+    margin-right: auto; 
+    font-size: 48px; 
+    line-height: 1.2; 
+    margin-top: 120px; 
+  } */
+  
+  /* this is a pseudo element that allows us to insert content before/after an element */
+  
+  
+  /* FIRST MEDIA QUERY */
+  /* For screens smaller than 768px */
+  
+  @media (max-width: 1100px) {
+    .image-caption-container {
+      flex-direction: column;
+      align-items: center;
+    }
+    .image-item {
+      margin-right: 0;
+      margin-bottom: 8px;
+      width: 95vw;
+    }
+    
+    .caption {
+      text-align: center; /* Center the caption text */
+      font-size: 24px;
+      width: 80vw;
+    }
+   
+    .hero {
+    clear: both;
+    padding: 32px 0 40px 0;
+    height: auto;
+    width: 100vw;
+    position: relative;
+    display: block;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    }
+    
+    .hero h1 {
+      font-size: 80px;
+      line-height: 1.2;
+    }
+  
+    .hero h2 {
+      font-size: 32px;
+      line-height: 1.2;
+    }
+    
+    .hero p {
+      font-size: 40px; /* Adjust the font size of p */
+    }
+    
+    .hero .text-container {
+      max-width: 90%; /* Set a maximum width relative to the viewport */
+      margin: 0 auto; /* Center the container horizontally */
+    }
+    
+     header nav a {
+      font-size: 24px;
+      padding-left: 20px;
+    }
+  
+    header nav a:first-child {
+      margin-right: 18px;
+    }
+  
+    header nav a:not(:first-child) {
+      margin-right: 4px;
+    }
+    
+    .dropdown-toggle {
+    font-size: 24px;
+    text-decoration: none;
+    color: #666666;
+    position: relative;
+    padding-left: 30px;
+    transition: color 0.5s;
+  }
+  }
+  
+  
+  
+  
+  
+  
+  
+  
