@@ -1,3 +1,2 @@
 # README
-## READ ME TOO
-### And me 
+This is my photo portfolio. It's a basic superhi project that I've updated as I go. It doesn't follow any best practices and I would like to completely redesign it some day, but it works for now. 
