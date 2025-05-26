@@ -119,7 +119,7 @@
     top: 100%; /* Center the img element vertically relative to its parent */
     right: -50px; /* Move the img element 50 pixels to the right of the text */
     transform: translateY(-50%); /* Center the img element vertically */
-    max-width: 300px;
+    max-width: 500px;
     /* this will tell the browser to ignore any default mouse interactions on this img element */
     pointer-events: none;
     transition: opacity 0.3s;
