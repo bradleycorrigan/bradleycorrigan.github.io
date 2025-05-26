@@ -89,7 +89,7 @@
     clear: both;
     padding: 20px 0;
     height: auto;
-    width: 100vw;
+    width: 100%;
     position: relative;
     display: flex;
     flex-direction: column;
@@ -220,8 +220,8 @@
   
   
   .image-item {
-    width: 70vw; 
-    height: 480px; /* Increase from 400px to 480px */
+    width: 70%; 
+    height: 580px;
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
