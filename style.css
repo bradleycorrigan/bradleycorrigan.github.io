@@ -128,7 +128,7 @@
   }
   
   .list a:after{
-    content: ' /';
+    content: '/ ';
   }
   
   .list a:last-child:after {
